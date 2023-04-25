@@ -19,4 +19,15 @@ Each of the next 'k' lines contains a single integer 'x'. These are the sizes of
 Output a single integer, which is the number of ways the 'k' distinct ships could be placed on your opponent's board.
 
 
+Sample input:
+4 3  (4 = board size 4x4, 3 = number of ships)
+....
+.OX.  (what you currently see of the board)
+....
+O..X
+3 (size of ship)
+2
+1
 
+Sample output(possible placements):
+264

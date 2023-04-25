@@ -54,7 +54,6 @@ public class MiniBattleship {
         int possiblePlacements = 0;
         for (int r = 0; r < length; r++) {
             for (int c = 0; c < length; c++) {
-                // måste ha med shipSize till canAddShipHorizontal/Vertical
 
                 if (canAddShipHorizontal(board, shipSize, r, c)) {
                     char[][] boardCopy = addShipHorizontal(board, shipSize, r, c);
@@ -126,7 +125,7 @@ public class MiniBattleship {
         int RADIX = 10;
         char[][] boardCopy = cloneArray(board);
         for (int i = col; i < col + shipSize; i++) {
-            boardCopy[row][i] = Character.forDigit(shipSize, RADIX); //(shipSize + 65); // int = test valid ship placement
+            boardCopy[row][i] = Character.forDigit(shipSize, RADIX);
         }
         return boardCopy;
     }
